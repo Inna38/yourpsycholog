@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./container.css" />
+    <link rel="stylesheet" href="./base.css" />
+    <link rel="stylesheet" href="./header.css" />
+    <link rel="stylesheet" href="./features.css" />
+    <link rel="stylesheet" href="./styles.css" />
+
+    <!-- ===================== SEO: Title и Description ===================== -->
+    <title>Психолог, кризовий спеціаліст, сексолог | Євгенія Глаголєва</title>
+
+    <meta
+      name="description"
+      content="Професійна психологиня та тренерка з багаторічним досвідом роботи з травмою, кризовими ситуаціями та особистісним розвитком. Психолог онлайн. Консультации психолога онлайн и офлайн."
+    />
+
+    <meta
+      name="keywords"
+      content="психолог, психолог онлайн, кризовий спеціаліст, сексолог, консультації, консультация психолога, психолог Украина, тренінги, подолання стресу, тривоги, депресії, сімейних та особистих проблем"
+    />
+
+    <!-- Додаємо альтернативні мови -->
+    <link
+      rel="alternate"
+      hreflang="uk"
+      href="https://yourpsycholog.netlify.app/"
+    />
+    <link
+      rel="alternate"
+      hreflang="ru"
+      href="https://yourpsycholog.netlify.app/"
+    />
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://yourpsycholog.netlify.app/"
+    />
+
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="Психолог онлайн – Консультації психолога"
+    />
+    <meta
+      property="og:description"
+      content="Онлайн-консультації психолога для подолання стресу, тривоги, депресії, сімейних та особистих проблем. Професійна допомога для кожного."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yourpsycholog.netlify.app/" />
+    <meta
+      property="og:image"
+      content="https://yourpsycholog.netlify.app/img/og-image.jpg"
+    />
+    <meta property="og:image:alt" content="Консультація психолога" />
+    <meta property="og:locale" content="uk_UA" />
+    <meta property="og:site_name" content="Психолог Євгенія Глаголєва" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container header__inner">
+        <div class="header__left">
+          <a href="/" class="logo">
+            <img src="./img/logo.png" alt="logo" />
+          </a>
+
+          <nav class="nav" aria-label="Main navigation">
+            <ul class="nav__list">
+              <li><a href="#hero">Головна</a></li>
+              <li><a href="#features">Переваги</a></li>
+              <li><a href="#about">Про мене</a></li>
+              <li><a href="#services">Послуги</a></li>
+              <li><a href="#price">Прайс</a></li>
+              <li><a href="#contact">Контакти</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="header__right">
+          <a href="tel:+380969270693" class="phone">096-927-06-93</a>
+          <a href="#contact" class="btn-outline">Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <header class="header_mobile">
+      <div class="container">
+        <a href="/" class="logo">
+          <img src="./img/logo.png" alt="logo" />
+        </a>
+
+        <button class="hamburger">&#9776;</button>
+        <button class="cross">&#735;</button>
+        <div class="menu">
+          <nav>
+            <ul class="nav_list_mobail">
+              <li><a href="#hero">Головна</a></li>
+              <li><a href="#features">Переваги</a></li>
+              <li><a href="#about">Про мене</a></li>
+              <li><a href="#services">Послуги</a></li>
+              <li><a href="#price">Прайс</a></li>
+              <li><a href="#contact">Контакти</a></li>
+            </ul>
+          </nav>
+
+          <ul class="social_list">
+            <li>
+              <a href="tel:+380969270693" class="phone">096-927-06-93</a>
+            </li>
+            <li>
+              <a href="#contact" class="btn-outline">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero" id="hero">
+        <div class="container hero__inner">
+          <div class="hero__content">
+            <h1>
+              Допоможу Вам Розпочати<br />
+              Новий Етап Життя
+            </h1>
+            <p class="hero__text">
+              Працюю з емоційними станами, кризами та травмою, щоб допомогти вам
+              повернути рівновагу та впевненість.
+            </p>
+
+            <div class="hero__buttons">
+              <a href="#contact" class="btn">Забронювати</a>
+              <a href="#about" class="btn-link">Про мене →</a>
+            </div>
+          </div>
+
+          <div class="images-grid">
+            <div class="img img-1">
+              <img src="./img/1.png" alt="" />
+            </div>
+
+            <div class="img img-2">
+              <img src="./img/2.png" alt="" />
+            </div>
+
+            <div class="img img-3">
+              <img src="./img/15.png" alt="" />
+            </div>
+
+            <div class="img img-4">
+              <img src="./img/21.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="features" id="features">
+        <div class="container">
+          <div class="centr_container">
+            <p class="features__subtitle">ПЕРЕВАГИ</p>
+            <h3 class="features__title">
+              Ваш провідник до стійких внутрішніх змін та емоційного
+              благополуччя
+            </h3>
+          </div>
+
+          <div class="features__grid">
+            <!-- Card 1 -->
+            <article class="feature-card">
+              <div class="feature-card__icon">
+                <img src="./img/individual.png" alt="Spiritual goals icon" />
+              </div>
+              <h3 class="feature-card__title">Індивідуальний підхід</h3>
+              <p class="feature-card__text">
+                Кожен клієнт отримує унікальну терапевтичну стратегію,
+                розроблену спеціально під його потреби, життєвий досвід та цілі.
+              </p>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="feature-card">
+              <div class="feature-card__icon">
+                <img
+                  src="./img/protect.png"
+                  alt="Individual Counselling icon"
+                />
+              </div>
+              <h3 class="feature-card__title">Конфіденційність та Безпека</h3>
+              <p class="feature-card__text">
+                Гарантія повної конфіденційності та створення безпечного
+                простору, де ви можете відкрито досліджувати свої почуття та
+                проблеми.
+              </p>
+            </article>
+
+            <!-- Card 3 — highlighted -->
+            <article class="feature-card">
+              <div class="feature-card__icon feature-card__icon--accent">
+                <img src="./img/method.png" alt="Personality disorders icon" />
+              </div>
+              <h3 class="feature-card__title">Доказові Методи</h3>
+              <p class="feature-card__text">
+                Використання сучасних, науково підтверджених терапевтичних
+                методів (наприклад, КПТ, АСТ, EMDR) для досягнення стійких
+                результатів.
+              </p>
+            </article>
+
+            <!-- Card 4 -->
+            <article class="feature-card">
+              <div class="feature-card__icon">
+                <img src="./img/online.png" alt="Troubling emotions icon" />
+              </div>
+              <h3 class="feature-card__title">Онлайн-Доступність</h3>
+              <p class="feature-card__text">
+                Гнучкі онлайн-сесії, що дозволяють отримувати допомогу з
+                будь-якої точки світу, заощаджуючи ваш час та забезпечуючи
+                комфорт.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="container about__wrapper">
+          <!-- IMAGE BLOCK -->
+          <div class="about__image-block">
+            <div class="about__decor about__decor--peach"></div>
+            <div class="about__decor about__decor--green"></div>
+
+            <figure class="about__image">
+              <img src="./img/6.png" alt="photo" />
+            </figure>
+          </div>
+
+          <!-- TEXT BLOCK -->
+          <div class="about__content">
+            <p class="about__subtitle">ПРО МЕНЕ</p>
+            <h3 class="about__title">
+              Я — психологиня, сертифікована кризова спеціалістка, сексологиня
+              та тренерка. Працюю у сфері психічного здоров’я, підтримки в
+              кризових станах та особистісного розвитку. Маю багаторічний досвід
+              роботи з індивідуальними клієнтами, групами та високоризиковими
+              категоріями населення.
+            </h3>
+
+            <p class="about__description">
+              Професійно підтримую ветеранів та ветеранок, військовослужбовців,
+              представників силових структур, внутрішньо переміщених осіб, а
+              також цивільних клієнтів, які переживають стрес, втрату,
+              тривожність, професійне вигорання чи складні життєві зміни. Я —
+              регіональна тренерка програми «Превенція суїциду в громадах».
+            </p>
+
+            <p class="about__description">
+              У своїй роботі використовую науково обґрунтовані методи:
+              брейнспотинг, тілесно-орієнтовану терапію, техніки стабілізації,
+              артпрактики, кризове втручання та інтегративний тренінговий
+              підхід. Працюю екологічно, з повагою до темпу клієнта, фокусуючись
+              на відновленні внутрішніх ресурсів, опори та стійкості.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="services" id="services">
+        <div class="centr_container">
+          <p class="section__subtitle">Послуги</p>
+          <h3 class="section-subtitle">
+            Оберіть шлях до свого емоційного благополуччя
+          </h3>
+        </div>
+
+        <div class="services_container">
+          <div class="service-card">
+            <div class="service-content">
+              <h2>Індивідуальні консультації</h2>
+              <p>
+                Глибока особиста робота для вирішення конкретних проблем,
+                подолання тривоги, депресії та підвищення самооцінки.
+              </p>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-content">
+              <h2>Групові зустрічі</h2>
+              <p>
+                Підтримка, обмін досвідом та розвиток соціальних навичок у
+                безпечному та підтримуючому середовищі.
+              </p>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-content">
+              <h2>Робота з військовослужбовцями</h2>
+              <p>
+                Професійна допомога ветеранам, військовослужбовцям та їхнім
+                сім’ям.
+              </p>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="meet-team">
+              <h2>Тренінги та навчання</h2>
+              <p>
+                Авторські тренінги з емоційної регуляції, профілактики вигорання
+                та кризової підтримки. Практичні техніки, які учасники можуть
+                використовувати в роботі та житті.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="book-online-cta">
+          <div class="cta-left">
+            <img src="./img/5.jpg" alt="photo" />
+            <p class="cta-text">
+              Подбайте про свій стан —
+              <br />
+              підтримка доступна поруч
+            </p>
+          </div>
+          <div class="cta-right">
+            <a href="#contact" class="btn">Забронювати</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="pricing-section" id="price">
+        <div class="container">
+          <div class="pricing-header centr_container">
+            <p class="pricing-title">Прайс</p>
+            <h3 class="pricing-description">
+              Оберіть формат консультацій, що відповідає вашим потребам і
+              запитам
+            </h3>
+          </div>
+
+          <div class="pricing-plans-container">
+            <article class="pricing-card basic-plan">
+              <h3 class="plan-name">Індивідуальні консультації</h3>
+              <div class="plan-price">
+                <span class="price-currency">грн</span>
+                <span class="price-amount">500</span>
+                <span class="price-period">/година</span>
+              </div>
+              <p class="plan-details">
+                Професійна підтримка у роботі з емоціями, ПТСР, кризовими
+                станами та особистісним розвитком. Підхід адаптований до вашого
+                темпу та потреб.
+              </p>
+              <a href="#contact" class="btn-outline pricing_btn">Забронювати</a>
+            </article>
+
+            <article class="pricing-card group-plan">
+              <h3 class="plan-name">Групові консультації та тренінги</h3>
+              <div class="plan-price">
+                <span class="price-currency">грн</span>
+                <span class="price-amount">1000</span>
+                <span class="price-period">/година</span>
+              </div>
+              <p class="plan-details">
+                Стабілізація емоцій, відновлення ресурсів і практичні
+                інструменти для подолання стресу. Профілактика вигорання.
+              </p>
+              <a href="#contact" class="btn-outline pricing_btn">Забронювати</a>
+            </article>
+
+            <article class="pricing-card basic-plan">
+              <h3 class="plan-name">
+                Робота з військовослужбовцями та їх родинами
+              </h3>
+              <div class="plan-price">
+                <span class="price-currency">грн</span>
+                <span class="price-amount">300</span>
+                <span class="price-period">/година</span>
+              </div>
+              <p class="plan-details">
+                Індивідуальна та групова підтримка військовослужбовців,
+                ветеранів та їхніх родин. Робота зі стресом, емоційною
+                стабілізацією та відновленням внутрішніх ресурсів.
+              </p>
+              <a href="#contact" class="btn-outline pricing_btn">Забронювати</a>
+            </article>
+
+            <article class="pricing-card advances-plan">
+              <h3 class="plan-name">Сексуальне здоров’я та кризові стани</h3>
+              <div class="plan-price">
+                <span class="price-currency">грн</span>
+                <span class="price-amount">500</span>
+                <span class="price-period">/година</span>
+              </div>
+              <p class="plan-details">
+                Професійна підтримка у сфері сексуального здоров’я, роботи з
+                травмами та кризовими ситуаціями.
+              </p>
+              <a href="#contact" class="btn-outline pricing_btn">Забронювати</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section" id="contact">
+        <section class="container">
+          <div class="cta-content">
+            <p>НЕ СУМНІВАЙТЕСЬ, ЗВ'ЯЖІТЬСЯ ЗІ МНОЮ</p>
+            <h3>Ваша подорож до емоційного благополуччя починається тут</h3>
+          </div>
+
+          <div class="appointment-container">
+            <div>
+              <div id="fb-root"></div>
+
+              <div class="fb-video-wrapper">
+                <div
+                  class="fb-video"
+                  data-href="https://www.facebook.com/100064878992522/videos/pcb.1114707930701830/1750626282472270"
+                  data-width="500"
+                  data-show-text="false"
+                ></div>
+              </div>
+            </div>
+
+            <div class="appointment-section">
+              <form class="appointment-form">
+                <div class="form-contact-group">
+                  <div class="form-group">
+                    <label for="name">Ім'я</label>
+                    <input type="text" id="name" name="full_name" required />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="phone">Номер Телефону</label>
+                    <input type="tel" id="phone" name="phone" required />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="service">Оберіть Послугу</label>
+                  <select id="service" name="service">
+                    <option value="" disabled selected>
+                      -- Виберіть послугу --
+                    </option>
+                    <option value="individual">
+                      Індивідуальна консультація
+                    </option>
+                    <option value="group">
+                      Групова консультація та тренінги
+                    </option>
+                    <option value="military">
+                      Робота з військовослужбовцями та їх родинами
+                    </option>
+                    <option value="sexual_health">
+                      Сексуальне здоров’я та кризові стани
+                    </option>
+                  </select>
+                </div>
+
+                <button type="submit" class="btn-outline form_btn">
+                  Записатися →
+                </button>
+              </form>
+
+              <!-- Модальное окно -->
+              <div id="modal" class="modal">
+                <div class="modal-content">
+                  <span id="modal-close" class="modal-close">&times;</span>
+                  <p id="modal-message"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <section class="contact-info-section">
+            <div class="contact-info-grid">
+              <article class="contact-card talk-card">
+                <h3 class="card-title">Давайте Поговоримо</h3>
+                <div class="card-content">
+                  <p>
+                    Телефон:
+                    <a href="tel:+380969270693" class="contact-link"
+                      >096-927-06-93</a
+                    >
+                  </p>
+                </div>
+              </article>
+
+              <article class="contact-card chat-card">
+                <h3 class="card-title">Зв'язок у Месенджерах</h3>
+                <div class="card-content">
+                  <!-- <p> -->
+
+                  <a
+                    href="https://t.me/+380969270693"
+                    target="_blank"
+                    class="contact-link"
+                  >
+                    <img
+                      src="./img/telegram.png"
+                      alt="telegram"
+                      class="contact-link-icon"
+                    />
+                  </a>
+
+                  <a
+                    href="viber://chat?number=+380969270693"
+                    class="contact-link"
+                  >
+                    <img
+                      src="./img/viber.png"
+                      alt="viber"
+                      class="contact-link-icon"
+                    />
+                  </a>
+                </div>
+              </article>
+
+              <article class="contact-card timings-card">
+                <h3 class="card-title">Пишіть</h3>
+                <div class="card-content">
+                  <p>
+                    Email:
+                    <a
+                      href="mailto:evgeniyaglagoleva2022@gmail.com"
+                      class="contact-link"
+                      >evgeniyaglagoleva2022@gmail.com</a
+                    >
+                  </p>
+                </div>
+              </article>
+            </div>
+          </section>
+        </section>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <nav
+            class="footer-column footer-nav"
+            aria-label="Навигация по футеру"
+          >
+            <ul>
+              <li><a href="#hero">Головна</a></li>
+              <li><a href="#features">Переваги</a></li>
+              <li><a href="#about">Про мене</a></li>
+              <li><a href="#services">Послуги</a></li>
+              <li><a href="#price">Прайс</a></li>
+              <li><a href="#contact">Контакти</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="./js/jquery-migrate-3.5.0.min.js"></script>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("PUBLIC_KEY");
+      })();
+    </script>
+
+    <script src="./js/form.js"></script>
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>
