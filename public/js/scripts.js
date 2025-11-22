@@ -49,13 +49,6 @@ $(function () {
   });
 });
 
-window.addEventListener("pageshow", function (event) {
-  const form = document.querySelector(".appointment-form");
-
-  if (event.persisted) {
-    form.reset();
-  }
-});
 
 //animation
 const featuresElements = document.querySelectorAll(".features__grid > *");
@@ -75,17 +68,9 @@ let contactAnimated = false;
 const observer = new IntersectionObserver(
   (entries, observer) => {
     entries.forEach((entry) => {
-      if (entry.isIntersecting && !featuresAnimated) {
-        featuresAnimated = true;
-
-        // поочередное появление всех элементов
-        featuresElements.forEach((el, index) => {
-          setTimeout(() => {
-            $(el).addClass("visible");
-          }, index * 300); // задержка между элементами
-        });
-
-        observer.disconnect(); // отключаем наблюдение после первой анимации
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target);
       }
     });
   },
@@ -104,7 +89,7 @@ const observerAbout = new IntersectionObserver(
         aboutElements.forEach((el, index) => {
           setTimeout(() => {
             $(el).addClass("visible");
-          }, index * 100); 
+          }, index * 50); 
         });
 
         observer.disconnect();
@@ -120,16 +105,9 @@ aboutElements.forEach((el) => observerAbout.observe(el));
 const observerServices = new IntersectionObserver(
   (entries, observer) => {
     entries.forEach((entry) => {
-      if (entry.isIntersecting && !servicesAnimated) {
-        servicesAnimated = true;
-
-        serviceElements.forEach((el, index) => {
-          setTimeout(() => {
-            el.classList.add("visible");
-          }, index * 300);
-        });
-
-        observer.disconnect();
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target);
       }
     });
   },
@@ -142,25 +120,20 @@ serviceElements.forEach((el) => observerServices.observe(el));
 const observerPricing = new IntersectionObserver(
   (entries, observer) => {
     entries.forEach((entry) => {
-      if (entry.isIntersecting && !pricingAnimated) {
-        pricingAnimated = true;
+      if (entry.isIntersecting) {
 
-        pricingElements.forEach((el, index) => {
-          setTimeout(() => {
-            el.classList.add("visible");
-          }, index * 400); 
-        });
-
-        observer.disconnect();
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target);
       }
     });
   },
   { threshold: 0.2 }
 );
 
+
 pricingElements.forEach((el) => observerPricing.observe(el));
 
-// -----------------------------------------------------------------------
+// ---------------------------------------------------------------------
 const observerContacts = new IntersectionObserver(
   (entries, observer) => {
     entries.forEach((entry) => {
